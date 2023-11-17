@@ -5,11 +5,11 @@
 import { CustomButtonProps } from '@/types';
 // we use this directive to convert our component (server side component) into a client-side component
 
-const CustomButton = ({ title, containerStyles, handleClick}: CustomButtonProps) => {
+const CustomButton = ({ title, containerStyles, handleClick, btnType}: CustomButtonProps) => {
   return (
     <button
         disabled={false}
-        type={'button'}
+        type={btnType || 'button'}
         className={`custom-btn ${containerStyles}`}
         onClick={handleClick}
     >

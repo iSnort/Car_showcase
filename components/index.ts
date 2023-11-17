@@ -1,7 +1,11 @@
+// we use this script for export all our components easily
 import Hero from './Hero'
 import CustomButton from "./CustomButton";
-// we use this script for export all our components easily
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 export {
     Hero,
-    CustomButton
+    CustomButton,
+    Navbar,
+    Footer,
 }
